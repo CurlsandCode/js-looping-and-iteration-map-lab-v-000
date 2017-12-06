@@ -1,6 +1,6 @@
 // Code your solution in this file.
 function lowerCaseDrivers (array) {
-  return array.map(function (element) { return element.toLowerCase();})
+  return array.map(function (driver) { return driver.toLowerCase();})
 };
 
 function nameToAttributes (array) {
@@ -11,7 +11,7 @@ function nameToAttributes (array) {
 
 
 function attributesToPhrase (array) {
-  return array.map(function(element) {
-    return `${element.name} is from ${element.hometown}`
+  return array.map(function(driver) {
+    return `${driver.name} is from ${driver.hometown}`
   })
 };
