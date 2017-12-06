@@ -1,4 +1,11 @@
 // Code your solution in this file.
-const lcDriver = map(drivers, function(dri){
-  return Object.assign ({},dri.toLowerCase();)
-})
+function lowerCaseDrivers (array){
+  return array.map(function(element)) {return element.toLowerCase();}
+}
+function nameToAttributes (array){
+  return array.map(function(element))
+}
+function attributesToPhrase (array){
+  return array.map(function(element))
+  
+}
