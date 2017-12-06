@@ -4,11 +4,11 @@ function lowerCaseDrivers (array) {
 };
 
 function nameToAttributes (array) {
-  return array.map(function(element) {
-    let name = element.split(" ");
-    return { firsName: name[0], lastName: name[1] }
+  return array.map(function(driver) {
+    return {'firstName': driver.split(' ')[0], 'lastName': driver.split(' ')[1]}
   })
 };
+
 
 function attributesToPhrase (array) {
   return array.map(function(element) {
