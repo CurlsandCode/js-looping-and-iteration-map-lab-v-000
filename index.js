@@ -3,14 +3,15 @@ function lowerCaseDrivers (array) {
   return array.map(function (element) { return element.toLowerCase();})
 };
 
-function nameToAttributes (array){
+function nameToAttributes (array) {
   return array.map(function(element) {
-    let name = element.split(" ")
-    return firsName: name[0], LastName: name[1];)
-  }
-}
-function attributesToPhrase (array){
+    let name = element.split(" ");
+    return { firsName: name[0], lastName: name[1] }
+  })
+};
+
+function attributesToPhrase (array) {
   return array.map(function(element) {
-    return `${element.name} is from ${element.hometown}`;)
-  }
-}
+    return `${element.name} is from ${element.hometown}`
+  })
+};
