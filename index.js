@@ -6,6 +6,8 @@ function nameToAttributes (array){
   return array.map(function(element))
 }
 function attributesToPhrase (array){
-  return array.map(function(element))
+  return array.map(function(element)) {
+    return "${element} is from ${element}";
+  }
   
 }
